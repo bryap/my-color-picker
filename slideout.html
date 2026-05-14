@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>My Color Picker</h1>
+      <button id="eyedropper-trigger" title="Select color from webpage">
+        <i class="fa-solid fa-eye-dropper"></i>
+      </button>
+    </div>
+
+    <div class="row">
+      <div id="hex-display">#Hex code</div>
+      <button class="copy-btn" id="copy-hex" title="Copy Hex">
+        <i class="fa-regular fa-copy"></i>
+      </button>
+    </div>
+
+    <div class="row">
+      <div class="rgb-group">
+        <div class="rgb-box"><span id="r-val">0</span><label>R</label></div>
+        <div class="rgb-box"><span id="g-val">0</span><label>G</label></div>
+        <div class="rgb-box"><span id="b-val">0</span><label>B</label></div>
+      </div>
+      <button class="copy-btn" id="copy-rgb" title="Copy RGB">
+        <i class="fa-regular fa-copy"></i>
+      </button>
+    </div>
+
+    <div id="storage-slots">
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="contrast-header">
+      <div class="section-title">Contrast Checker</div>
+      <button id="swap-colors" title="Swap Foreground/Background">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+      </button>
+    </div>
+    
+    <div class="contrast-row">
+      <div class="color-input-group">
+        <label>Foreground</label>
+        <input type="text" id="fg-hex" value="#000000">
+        <input type="color" id="fg-native-picker" class="color-tool-btn">
+        <input type="range" id="fg-lightness" min="0" max="100" value="0">
+      </div>
+      
+      <div class="color-input-group">
+        <label>Background</label>
+        <input type="text" id="bg-hex" value="#FFFFFF">
+        <input type="color" id="bg-native-picker" class="color-tool-btn" value="#ffffff">
+        <input type="range" id="bg-lightness" min="0" max="100" value="100">
+      </div>
+    </div>
+
+    <div id="ratio-display-container">
+      <div id="ratio-label">Contrast Ratio</div>
+      <div id="ratio-value">1.00 : 1</div>
+    </div>
+
+    <div class="harmony-selector">
+      <label for="harmony-type">Color Harmony:</label>
+      <select id="harmony-type">
+        <option value="split">Split-Complementary</option>
+        <option value="triadic">Triadic</option>
+        <option value="tetradic">Tetradic</option>
+        <option value="analogous">Analogous</option>
+      </select>
+    </div>
+
+    <div class="palette-header">
+      <div class="section-title">Recommended Color Palette</div>
+      <button id="shuffle-palette" title="Random Palette">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+    </div>
+    
+    <div id="palette-slots">
+      <div class="palette-slot" id="p-slot-1"></div>
+      <div class="palette-slot" id="p-slot-2"></div>
+      <div class="palette-slot" id="p-slot-3"></div>
+      <div class="palette-slot" id="p-slot-4"></div>
+      <div class="palette-slot" id="p-slot-5"></div>
+    </div>
+
+    <div class="footer">Created by Brya K. Patterson, 2026</div>
+  </div>
+
+  <script src="slideout.js"></script>
+</body>
+</html>

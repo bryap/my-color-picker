@@ -1,10 +1,17 @@
 {
   "manifest_version": 3,
   "name": "My Color Picker",
-  "version": "1.0",
-  "permissions": ["storage"],
+  "version": "1.1",
+  "description": "A secure color picker and contrast checker.",
+  "permissions": ["storage", "sidePanel"],
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Open Color Picker"
+  },
+  "side_panel": {
+    "default_path": "slideout.html"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "icons": {
     "48": "dropper-turkkub.png"

@@ -7,11 +7,14 @@ I built this because I was frustrated with the color picker extensions in the Ch
 exactly what you expect. This is open-source, feel free to copy this code and build on this project to meet your needs.
 
 ## ✨ Features
+- **Slide-out UI:** Modern side panel interface for better multitasking (Chrome 114+).
 - **EyeDropper API:** Uses the native browser EyeDropper for high performance and security.
-- **Instant Values:** Get Hex and RGB values immediately.
-- **Copy-to-Clipboard:** One-click copying for both Hex and RGB formats.
+- **Contrast Checker:** Real-time WCAG contrast ratio calculation with WebAIM API integration.
+- **Lightness Sliders:** Fine-tune colors to meet accessibility standards.
+- **Recommended Palette:** Automatically generates complementary and random accessible color palettes.
+- **Copy-to-Clipboard:** One-click copying for Hex and RGB formats.
 - **History:** Saves your last 5 selected colors locally.
-- **Modern UI:** Clean interface using the Quicksand Google Font and Font Awesome icons.
+- **Modern UI:** Clean interface using the Quicksand Google Font.
 
 ## 🚀 Installation (Load Unpacked)
 Since this is a personal, secure tool, you can load it directly into Chrome:
